@@ -1,0 +1,22 @@
+goal:
+  revenue_target_usd: 1000
+  target_window_days: 30
+  target_type: goal_not_guarantee
+
+positioning:
+  primary_offer: "Full-stack implementation of AI-enabled product features"
+  core_skills:
+    - React
+    - TypeScript
+    - Next.js
+    - Node.js
+    - API integrations
+    - LLM applications
+    - RAG
+    - AI agents and tool calling
+
+workflow:
+  initial_mode: read_only_discovery_and_drafting
+  require_fresh_approval_before_submission: true
+  boost_by_default: false
+  store_private_profile_data_in_repo: false
