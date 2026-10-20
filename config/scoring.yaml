@@ -1,0 +1,26 @@
+# Starting heuristics. Calibrate from observed results; do not treat as facts.
+filters:
+  require_clear_scope_or_clarifiable_scope: true
+  reject_if_required_capability_unverified: true
+  check_duplicate_application_or_invitation: true
+  prioritize_payment_verified_clients: true
+
+connects:
+  max_connects_for_200_to_499_usd_jobs: 16
+  max_connects_for_500_plus_usd_jobs: 20
+  boost_by_default: false
+  require_fresh_cost_check_before_approval: true
+
+scoring_weights:
+  technical_fit: 30
+  client_credibility: 20
+  scope_clarity: 15
+  budget_and_value: 15
+  competition_and_timing: 10
+  portfolio_evidence: 10
+
+decision:
+  apply_threshold: 70
+  review_threshold: 55
+  below_review_threshold: reject
+  always_explain_score_and_uncertainty: true
