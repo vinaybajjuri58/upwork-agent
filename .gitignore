@@ -1,0 +1,23 @@
+# Secrets and local auth state
+.env
+.env.*
+!.env.example
+*token*
+*cookie*
+*session*
+credentials*
+secrets*
+
+# Private local evidence and tracking
+data/*.local.md
+data/*.private.*
+data/private/
+data/tracker-export.*
+data/applications.local.csv
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+.DS_Store
